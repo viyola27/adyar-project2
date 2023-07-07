@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patient Details</title>
+    <style>
+    h1{
+    font-family: Georgia;
+    font-synthesis-weight:normal;
+    color:rgb(100,100,100);
+    text-align:center;
+    gap=2rem;
+    }
+    #container{
+     display:flex;
+      flex-wrap:wrap;
+      justify-content:space-around;
+      align-content:space-between;
+    }
+    div {
+  padding: 9px 10px ;
+}
+    #one{
+        display: flex;
+        flex-wrap:wrap;
+      gap:1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enter Your Details</h1>
+  </body>
+    <form>
+    <div id="container">
+    <div id="one">
+      <label>Name</label><br>
+      <input type="text" name="name" style="width:110px">
+    </div>
+    <div id="one" >
+      <label>Age</label><br>
+      <input type="number" name="age" min="18" style="width:50px">
+    </div>
+      <div>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="m"> Male
+        <input type="radio" name="gender" value="f">Female
+      </div>
+    <div>
+        <label>Weight(in kgs)</label><br>
+        <input type="number" step="0.01" name="weight" style="width:50px">
+      </div>
+    <div>
+        <label>Height(in mtrs)</label><br>
+        <input type="number" step="0.01" name="height" style="width:50px">
+      </div>
+    <div>
+        <label>Substance abuse</label><br>
+        <input type="radio" name="sub" value="1">Yes
+        <input type="radio" name="sub" value="0">No 
+      </div>
+    <div>
+      <label>ECOG Description</label><br>
+      <select name="ecog" >
+      <option value="1">Fully active</option>
+      <option value="2">Restricted in strenuous activity</option>
+      <option value="3">Capable of self-care</option>
+      <option value="4">Capable of limited self-care</option>
+      <option value="5">Completely disabled</option>
+      <option value="6">Dead</option>
+      </select>
+      </div>
+    <div>
+        <label>Diabetes</label><br>
+        <select name="diabetes" >
+          <option value="1">No value</option>
+          <option value="2">Good control,no influence</option>
+          <option value="3">Partially controlled,partially influenced</option>
+          <option value="4">Severly controlled,severally influenced</option>
+      </select>
+    </div>
+    <div>
+        <label>Ejection percentage</label><br>
+        <input type="number" name="ejec" style="width:50px">
+      </div>
+    <div>
+        <label>Weight loss</label><br>
+        <input type="number" name="loss" style=width:50px>
+      </div>
+    <div>
+        <label>Hemoglobin value</label><br>
+        <input type="number" step="0.1" name="hemo" style="width:50px">
+      </div>
+    <div>
+        <label>WBC Count</label><br>
+        <input type="number" step="0.1" name="wbc" style="width:50px">
+      </div>
+    <div>
+      <label>ANC Value</label><br>
+      <input type="number" step="0.1" name="anc" style="width:50px">
+    </div>
+     <div>
+      <label>Platelets Count</label><br>
+      <input type="number" step="0.1" name="platelets" style="width:50px">
+    </div>
+     <div>
+      <label>Creatinine amount</label><br>
+      <input type="number" step="0.1" name="camt" style="width:50px">
+    </div>
+     <div>
+      <label>Creatinine level</label><br>
+      <input type="number" name="clevel" style="width:50px">
+    </div>
+     <div>
+      <label>Bilirubin Level</label><br>
+      <input type="number" step="0.1" name="blvl" style="width:50px">
+    </div>
+     <div>
+      <label>AST Value</label><br>
+      <input type="number" name="ast" style="width:50px">
+    </div>
+     <div>
+      <label>ALT Value</label><br>
+      <input type="number" name="alt" style="width:50px">
+    </div>
+     <div>
+      <label>Total Protein Level</label><br>
+      <input type="number" step="0.1" name="tp" style="width:50px">
+    </div>
+     <div>
+      <label>Globulin amount</label><br>
+      <input type="number" step="0.1" name="gb" style="width:50px">
+    </div>
+     <div>
+      <label>Pulse Rate</label><br>
+      <input type="number" name="pulse" style="width:50px">
+    </div>
+     <div>
+      <label>Oxygen Level</label><br>
+      <input type="number" name="oxy" style="width:50px">
+    </div>
+     <div>
+      <label>Heart Rate</label><br>
+      <input type="number" name="heart" style="width:50px">
+    </div>
+     <div>
+      <label>Duration of prior hospitalization</label><br>
+       <select name="period" >
+      <option value="nil">Not Hospitalized</option>
+      <option value=">6 months">>6 months</option>
+      <option value="3-6 months">3-6 months</option>
+      <option value="2-3 months">2-3 months</option>
+      <option value="1-2 months">1-2 months</option>
+      <option value="<1 month"><1 month</option>
+      </select>
+    </div>
+     <div>
+      <label>Systole Value</label><br>
+      <input type="number" name="sys" style="width:50px">
+    </div>
+     <div>
+      <label>Diastole Value</label><br>
+      <input type="number" name="dia" style="width:50px">
+    </div>
+     <div>
+      <label>Distance to be walked(in mtrs)</label><br>
+      <input type="number" name="dist" style="width:50px">
+    </div>
+     <div>
+      <label>Drug type</label><br>
+      <select name="diabetes" >
+          <option value="tki">tki</option>
+          <option value="antibody">antibody</option>
+          <option value="chemotherapy drug">chemotherapy drug</option>
+      </select>
+    </div>
+     <div>
+      <label>No of drugs</label><br>
+      <input type="number" name="nodrugs" style="width:50px">
+    </div>
+     <div>
+      <label>Frequency of agents</label><br>
+       <select name="frqd">
+          <option value="2 agents every week">2 agents every week</option>
+          <option value="2 agents every 2 weeks">2 agents every 2 weeks</option>
+          <option value="2 agents every 3 weeks">2 agents every 3 weeks</option>
+          <option value="1 agent every week">1 agent every week</option>
+      </select>
+    </div>
+    <div>
+      <label>Setting Level</label><br>
+      <input type="radio" name="slevel" value="NACT"> NACT
+      <input type="radio" name="slevel" value="ACT">ACT
+      <input type="radio" name="slevel" value="RCT1">RCT1
+      <input type="radio" name="slevel" value="RCT2">RCT2
+    </div>
+    <div>
+      <label>Social Support</label><br>
+      <input type="radio" name="ss" value="nil"> Nil
+      <input type="radio" name="ss" value="good">Good
+       <input type="radio" name="ss" value="poor">Poor
+    </div>
+    <div>
+      <label>Distance from home(in kms)</label><br>
+      <input type="number" name="dis" style="width:50px">
+    </div>
+    <div>
+      <label>Mental State</label><br>
+      <select name="ms">
+          <option value="1">Normal</option>
+          <option value="2">Depressed</option>
+          <option value="3">Unstable</option>
+          <option value="4">Psych</option>
+      </select>
+    </div>
+    <div>
+      <label>High</label><br>
+      <input type="radio" name="high" value="0"> 0
+      <input type="radio" name="high" value="1">1
+    </div>
+    <div>
+      <label>Stage</label><br>
+      <input type="radio" name="stage" value="0"> 0
+      <input type="radio" name="stage" value="1">1
+      <input type="radio" name="stage" value="2">2
+    </div>
+    <div>
+      <label>Level of grades</label><br>
+      <input type="radio" name="grade" value="1">Low
+      <input type="radio" name="grade" value="2">High
+    </div>
+    <input type="submit" name="submit">
+    </div>
+    </form>
+</html>
