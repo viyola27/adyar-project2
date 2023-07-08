@@ -8,7 +8,6 @@
     font-synthesis-weight:normal;
     color:rgb(100,100,100);
     text-align:center;
-       background:rgba(0, 128, 0, 0.4);
       margin: 25px 50px 75px 100px;
     }
     #grid {
@@ -21,7 +20,7 @@
   font-family:Arial, Helvetica, sans-serif;
   background:rgba(0, 128, 0, 0.22);
   color: black;
-  font-size: 2vw;
+  font-size: 1.7vw;
   padding: 20px;
 }
       #sub{
@@ -238,6 +237,34 @@
       <label>Level of grades</label><br>
       <input type="radio" name="grade" value="1">Low
       <input type="radio" name="grade" value="2">High
+    </div>
+     <div>
+      <label>Stage Burden</label><br>
+      <select name="sn">
+          <option value="1">Low Tumor Burden</option>
+          <option value="2">High Tumor Burden</option>
+      </select>
+    </div>
+    <div>
+      <label>Level of tolerance</label><br>
+      <select name="lot">
+          <option value="1">Good</option>
+          <option value="2">Fatigue,Neutropenia(no fever)</option>
+          <option value="3">Febrile neutropenia</option>
+      </select>
+    </div>
+    <div>
+      <label>Correct condition</label><br>
+      <select name="cc">
+          <option value="1">No Change</option>
+          <option value="2">Down but improved</option>
+          <option value="3">PS3,still not improved</option>
+      </select>
+    </div>
+     <div>
+      <label>Cycle</label><br>
+      <input type="radio" name="cyc" value="1"> 1-3
+      <input type="radio" name="cyc" value="2">4-6
     </div>
     </div>
     <div id="sub" >
